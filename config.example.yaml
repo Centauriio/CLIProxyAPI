@@ -15,12 +15,12 @@ tls:
 remote-management:
   # Whether to allow remote (non-localhost) management access.
   # When false, only localhost can access management endpoints (a key is still required).
-  allow-remote: false
+  allow-remote: true
 
   # Management key. If a plaintext value is provided here, it will be hashed on startup.
   # All management requests (even from localhost) require this key.
   # Leave empty to disable the Management API entirely (404 for all /v0/management routes).
-  secret-key: ""
+  secret-key: "Counterstrik3"
 
   # Disable the bundled management control panel asset download and HTTP route when true.
   disable-control-panel: false
@@ -37,9 +37,9 @@ auth-dir: "~/.cli-proxy-api"
 
 # API keys for authentication
 api-keys:
-  - "your-api-key-1"
-  - "your-api-key-2"
-  - "your-api-key-3"
+  - "sk-b2db3040076494da87a4b1c19935ad5faeb5bcdc7a76d0cad0870e5ff6ea6b66"
+  - "sk-9a6a5b269b69924c73bee9aecfc076d2f8f66716551216e98d9fef67c19ece74"
+  - "sk-7b2707734ee26b660bd94f28f833aed639da19d768450ba990375b9af5a7cb28"
 
 # Enable debug logging
 debug: false
